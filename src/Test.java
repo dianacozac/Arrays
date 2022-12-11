@@ -11,20 +11,20 @@ public class Test {
 //       System.out.println(myIntArray[2] );
 //        System.out.println( myIntArray.length);
         for (int i = 0; i < myIntArray.length; i++) {
-            myIntArray[i] = i * 10;
+            myIntArray[i] = myIntArray[i] * 10;
         }
 //         for(int i=0; i< 4; i++){
 //             System.out.println(myIntArray[i]);
 //         }
         printArray(myIntArray);
 
-        int[][] myNumbers = {{1, 2, 3, 4}, {6, 8, 7}};
+        int[][] myNumbers = { {1, 2, 3}, {6, 8, 7} };
         System.out.println(myNumbers[1][1]); //al 2-lea element din a doua lista
 
         int[][] myNumbers2 = { {1,2,3}, {4,5,6,7} };
-        for (int i=0; i<myNumbers2.length; i++) {
+        for (int i=0; i< myNumbers2.length; i++) {
             for(int j=0; j< myNumbers2[i].length; j++) {
-                System.out.println( myNumbers[i][j]);
+                System.out.println( myNumbers2[i][j]);
             }
         }
 
